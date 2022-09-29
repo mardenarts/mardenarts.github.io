@@ -1,0 +1,19 @@
+body {
+    background-color: 191a1b;
+    color: white;
+}
+
+
+.topbar {
+    background-color: #2a2d30;
+    padding: 10px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    max-width: 1020px;
+}
+
+.header_item {
+    flex: 1;
+}
