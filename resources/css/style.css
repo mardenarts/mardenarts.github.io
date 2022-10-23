@@ -16,6 +16,229 @@
   padding: 0px;
   outline: none;
 }
+.banner {
+  margin:auto;
+  max-width: 1020px;
+  margin-bottom:15px;
+} .image_banner {
+  
+  max-width: 100%;
+  height: auto;
+}
+.content {
+    margin:5px;
+}
+.container {
+    margin:auto;
+    max-width: 1020px;
+}
+.posts {
+  padding: 10px;
+}
+
+
+.post_content {
+  margin-top:10px;
+  margin-bottom:10px;
+
+}
+
+.post_image {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.post_date {
+  letter-spacing: 0.3pt;
+  text-align: left;
+  color: #00b562;
+  padding-bottom: 10px;
+}
+.post_tags {
+  margin-top: 25px;
+  line-height: 2.5;
+
+
+a.tag_link {
+  background-color: #007cbe ;
+  text-align: center;
+  border-radius: 6px;
+  margin: 5px 2px 2px 2px;
+  padding: 3px 10px;
+
+}
+.list_contact {
+  margin: 4px 10px
+}
+
+a.tag_link:link {
+  color: white;
+}
+a.tag_link:visited {
+  color: white;
+}
+a.tag_link:active {
+  color: white;
+}
+a.tag_link:hover {
+  color:white;
+  background-color: #0097e6;
+}
+h1 {
+    line-height: 3;
+    letter-spacing: 2.1pt;
+    /*text-align:center;*/
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+h2 {
+    line-height: 3;
+    letter-spacing: 2.1pt;
+    text-align:center;
+}
+
+h3 {
+    line-height: 3;
+    letter-spacing: 2.1pt;
+    padding-top: 20px;
+    color: #00b562;
+    /*text-align:center;*/
+}
+h4 {
+    line-height: 3;
+    letter-spacing: 0.3pt;
+    text-align:left;
+    color: #00b562;
+    padding-top: 10px;
+
+}
+hr {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  height:1px;
+  background-color: #333;
+  border: 0 none;
+}
+p {
+    line-height: 1.8;
+    letter-spacing: 0.3pt;
+}
+a:link {
+  color: #0097e6;
+}
+a:visited {
+  color: #0097e6;
+}
+a:active {
+  color: #0097e6;
+}
+a:hover {
+  color: #6ec6f4;
+}
+.footer {
+    margin-top:20px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+.social_image {
+      margin: 5px;
+      display:inline-block;
+  }
+
+.post_panel {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    justify-content:left;
+    width: 100%;
+
+}
+.post_item {
+  margin :10px;
+  position: relative;
+  cursor: pointer;
+}
+.card_small {
+  margin-left :10px;
+  padding-top: 5px;
+  width: 500px;
+  height: 75px;
+  position: relative;
+  cursor: pointer;
+}
+.card_caption {
+  display:inline;
+  top: 40%;
+  position: absolute;
+  padding-left: 10px;
+  left: 70px;
+}
+.card_icon {
+  display: inline;
+  top: 10%;
+  position: absolute;
+}
+
+.image_card {
+  width: 60px; /* width of container */
+  height: 60px; /* height of container */
+  object-fit: cover;
+  object-position: 50% 50%; /* try 20px 10px */ 
+  border-radius: 5px;
+}
+
+.image_thumb {
+  width: 320px; /* width of container */
+  height: 240px; /* height of container */
+  object-fit: cover;
+  object-position: 50% 50%; /* try 20px 10px */ 
+  border-radius: 5px;
+  
+ }
+  
+.post_item:hover .overlay {
+  transform: scale(1);
+}
+
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.1s 0.1s ease-in-out;
+  color: #fff;
+  border-radius: 5px;
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+    display: inline-block;
+    
+  }
+  
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .2s;
+}
+  
+.pagination a.active_page {
+    background-color: #4db346;
+    color: white;
+} .pagination a:hover:not(.active) {
+    background-color: #555;
+}
+
 #menunav .section {
   width: 100%;
   max-width: 1200px;
@@ -27,7 +250,7 @@
   width: 100%;
   display: table;
   background-color: #1A1D21;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 #menunav #logo {
   float: left;
@@ -70,8 +293,12 @@
   margin-bottom: 4px;
 }
 #menunav .toggle-menu ul li:last-child { margin-bottom: 0px; }
-#menunav input[type=checkbox], label { display: none; } @media only screen and (max-width: 1440px) { #menunav .section { max-width: 95%; } } @media only screen and (max-width: 980px) {
-#menunav { padding: 14px 0px; }
+#menunav input[type=checkbox], label { display: none; } @media only screen and (max-width: 1440px) { #menunav .section { max-width: 95%; } }
+@media only screen and (max-width: 980px) {
+.banner {
+  display:none;
+
+} #menunav { padding: 14px 0px; }
 #menunav #logo { padding: 6px 0px; }
 #menunav input[type=checkbox] {
   position: absolute;
@@ -112,33 +339,43 @@
 
 }
 @media only screen and (max-width: 480px) {
-#menunav .section { max-width: 90%; } } @media only screen and (max-width: 360px) {
+#menunav .section { max-width: 90%; } .nomob { display: none} } @media only screen and (max-width: 360px) {
 #menunav label { padding: 5px 0px; }
 #menunav #logo { font-size: 20px; }
 #menunav nav { top: 47px; } }
-.content {
-    margin:5px
+.lightbox { /* Default to hidden */ display: none;
+/* Overlay entire screen */ position: fixed; z-index: 999; top: 0; left: 0; right: 0; bottom: 0;
+/* A bit of padding around image */ padding: 1em;
+/* Translucent background */ background: rgba(0, 0, 0, 0.8); }
+/* Unhide the lightbox when it's the target */ .lightbox:target {
+  display: block;
 }
-.container {
-    margin:auto;
-    max-width: 1020px;
-}
-h2 {
-    line-height: 3;
-    letter-spacing: 2.1pt;
-}
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
 
-p {
-    line-height: 1.8;
-    letter-spacing: 0.3pt;
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+} .image_small {
+  margin-top: 20px;
+  border-radius:5px;
+  max-width: 200px;
+  display: inline;
 }
-.footer {
-    padding: 10px;
-    text-align: center;
-    
-  }
-  
-.social_image {
-      margin: 5px;
-      display:inline-block;
-  }
+.image_page {
+  margin-top:18px;
+  margin-bottom:18px;
+
+
+}
+.w60 {
+  width:60%;
+}
+.col50 {
+  flex:50%;
+}
